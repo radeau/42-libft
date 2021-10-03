@@ -1,20 +1,38 @@
 /* ******************************************************************************* */
 /*                                                                                 */
 /*                                                             :::      ::::::::   */
-/*   ft_tolower.c                                            :+:      :+:    :+:   */
+/*   ft_memset.c                                             :+:      :+:    :+:   */
 /*                                                         +:+ +:+         +:+     */
 /*   By: kpoquita <kpoquita@student.42abudhabi.ae>       +#+  +:+       +#+        */
 /*                                                     +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/02 13:53:23 by kpoquita               #+#    #+#             */
-/*   Updated: 2021/10/02 13:53:29 by kpoquita              ###   ########.fr       */
+/*   Created: 2021/10/03 08:45:37 by kpoquita               #+#    #+#             */
+/*   Updated: 2021/10/03 11:00:56 by kpoquita              ###   ########.fr       */
 /*                                                                                 */
 /* ******************************************************************************* */
 
-int	ft_tolower(int c)
+#include "libft.h"
+//#include <stdio.h>
+//#include <stddef.h>
+//#include <string.h>
+
+void	*ft_memset(void *str, int c, size_t n)
 {
-	if (c >= 65 && c <= 90)
-	{
-		c = c + 32;
-	}
-	return (c);
+	unsigned char *ptr = str;
+	while (n-- > 0)
+		*ptr++ = c;
+	return str;
 }
+
+/** TESTING
+
+int main()
+{
+	char str[] = "Hello World!";
+	ft_memset(str, 35, 5);
+	printf("%s ==> ft_memset()\n", str);
+	memset(str, 36, 5);
+	printf("%s ==> memset()\n", str);
+	return 0;
+}
+
+**/
