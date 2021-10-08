@@ -1,12 +1,12 @@
 /* ******************************************************************************* */
 /*                                                                                 */
 /*                                                             :::      ::::::::   */
-/*   libft.h                                                 :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                         +:+ +:+         +:+     */
 /*   By: kpoquita <kpoquita@student.42abudhabi.ae>       +#+  +:+       +#+        */
 /*                                                     +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/07 21:05:49 by kpoquita               #+#    #+#             */
-/*   Updated: 2021/10/07 23:39:26 by kpoquita              ###   ########.fr       */
+/*   Updated: 2021/10/08 10:30:34 by kpoquita         ###   ########.fr       */
 /*                                                                                 */
 /* ******************************************************************************* */
 
@@ -53,5 +53,7 @@ int		ft_toupper(int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
+
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 
 #endif
