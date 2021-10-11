@@ -6,13 +6,13 @@
 #    By: kpoquita <kpoquita@student.42abudhabi.ae>       +#+  +:+       +#+         #
 #                                                      +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/07 19:56:46 by kpoquita               #+#    #+#              #
-#    Updated: 2021/10/11 19:31:28 by kpoquita         ###   ########.fr        #
+#    Updated: 2021/10/12 00:30:20 by kpoquita         ###   ########.fr        #
 #                                                                                   #
 # ********************************************************************************* #
 
 SRCS =  ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
 		ft_memcpy.c ft_memset.c ft_strlen.c ft_tolower.c ft_toupper.c ft_strncmp.c \
-		ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c \
+		ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c \
 
 OBJS = $(SRCS:.c=.o)
 
