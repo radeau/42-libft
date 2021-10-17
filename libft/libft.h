@@ -70,4 +70,5 @@ void	ft_putchar_fd(char c, int fd);
 
 void	ft_putstr_fd(char *s, int fd);
 
+void	*ft_memmove(void *dest, const void *src, size_t n);
 #endif
