@@ -6,7 +6,7 @@
 /*   By: kpoquita <kpoquita@student.42abudhabi.ae>       +#+  +:+       +#+        */
 /*                                                     +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/07 21:05:49 by kpoquita               #+#    #+#             */
-/*   Updated: 2021/10/16 10:12:21 by kpoquita         ###   ########.fr       */
+/*   Updated: 2021/10/17 12:09:11 by kpoquita         ###   ########.fr       */
 /*                                                                                 */
 /* ******************************************************************************* */
 
@@ -71,4 +71,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 
 void	*ft_memmove(void *dest, const void *src, size_t n);
+
+void	*ft_calloc(size_t nmeb, size_t size);
+
 #endif
