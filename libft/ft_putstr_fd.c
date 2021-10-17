@@ -6,7 +6,7 @@
 /*   By: kpoquita <kpoquita@42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 10:26:46 by kpoquita          #+#    #+#             */
-/*   Updated: 2021/10/16 10:26:49 by kpoquita         ###   ########.fr       */
+/*   Updated: 2021/10/16 11:50:59 by kpoquita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,10 @@
 void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
-
+	
 	i = 0;
+	if (!s)
+		return ;
 	while (s[i] != '\0')
 	{
 		ft_putchar_fd(s[i], fd);
