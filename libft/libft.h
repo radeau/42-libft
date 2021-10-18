@@ -6,7 +6,7 @@
 /*   By: kpoquita <kpoquita@student.42abudhabi.ae>       +#+  +:+       +#+        */
 /*                                                     +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/07 21:05:49 by kpoquita               #+#    #+#             */
-/*   Updated: 2021/10/18 10:59:37 by kpoquita         ###   ########.fr       */
+/*   Updated: 2021/10/18 12:53:27 by kpoquita         ###   ########.fr       */
 /*                                                                                 */
 /* ******************************************************************************* */
 
@@ -77,5 +77,9 @@ void	*ft_calloc(size_t nmeb, size_t size);
 int	ft_atoi(const char *str);
 
 void    *ft_memchr(const void *s, int c, size_t n);
+
+void    ft_putendl_fd(char *s, int fd);
+
+int ft_memcmp(const void *str1, const void *str2, size_t n);
 
 #endif
