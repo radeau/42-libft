@@ -6,7 +6,7 @@
 /*   By: kpoquita <kpoquita@student.42abudhabi.ae>       +#+  +:+       +#+        */
 /*                                                     +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/07 21:05:49 by kpoquita               #+#    #+#             */
-/*   Updated: 2021/10/18 12:53:27 by kpoquita         ###   ########.fr       */
+/*   Updated: 2021/10/19 16:10:21 by kpoquita         ###   ########.fr       */
 /*                                                                                 */
 /* ******************************************************************************* */
 
@@ -15,6 +15,7 @@
 
 #include <unistd.h>
 #include <stdlib.h>
+
 
 typedef	struct	s_list
 {
@@ -83,5 +84,9 @@ void    ft_putendl_fd(char *s, int fd);
 int	ft_memcmp(const void *str1, const void *str2, size_t n);
 
 void	ft_putnbr_fd(int n, int fd);
+
+char	*ft_strjoin(char const *s1, char const *s2);
+
+t_list	*ft_lstnew(void *content);
 
 #endif
