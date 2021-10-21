@@ -6,7 +6,7 @@
 /*   By: kpoquita <kpoquita@42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 11:49:57 by kpoquita          #+#    #+#             */
-/*   Updated: 2021/10/18 11:51:31 by kpoquita         ###   ########.fr       */
+/*   Updated: 2021/10/21 09:35:16 by kpoquita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	ft_putstr_fd(s,fd);
-	ft_putchar_fd('\n',fd);
+	ft_putstr_fd(s, fd);
+	ft_putchar_fd('\n', fd);
 }

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kpoquita <kpoquita@42abudhabi.ae>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/21 09:35:45 by kpoquita          #+#    #+#             */
+/*   Updated: 2021/10/21 09:36:44 by kpoquita         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 static void	display_nbr(int n, int fd)
@@ -21,5 +33,5 @@ void	ft_putnbr_fd(int n, int fd)
 		write(fd, "-", 1);
 		n *= -1;
 	}
-		display_nbr(n, fd);
+	display_nbr(n, fd);
 }

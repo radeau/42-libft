@@ -6,17 +6,16 @@
 /*   By: kpoquita <kpoquita@42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 10:26:46 by kpoquita          #+#    #+#             */
-/*   Updated: 2021/10/16 11:50:59 by kpoquita         ###   ########.fr       */
+/*   Updated: 2021/10/21 09:44:23 by kpoquita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int	i;
-	
+	int		i;
+
 	i = 0;
 	if (!s)
 		return ;

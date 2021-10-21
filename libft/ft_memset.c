@@ -6,18 +6,20 @@
 /*   By: kpoquita <kpoquita@42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/08 02:52:38 by kpoquita          #+#    #+#             */
-/*   Updated: 2021/10/08 03:02:03 by kpoquita         ###   ########.fr       */
+/*   Updated: 2021/10/21 09:31:10 by kpoquita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *str, int c, size_t n)
+void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*ptr;
+	size_t			i;
 
-	ptr = str;
-	while (n-- > 0)
-		*ptr++ = c;
-	return (str);
+	i = 0;
+	ptr = (unsigned char *)b;
+	while (len-- > 0)
+		ptr[i++] = c;
+	return (ptr);
 }
