@@ -6,7 +6,7 @@
 /*   By: kpoquita <kpoquita@student.42abudhabi.ae>       +#+  +:+       +#+        */
 /*                                                     +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/07 21:05:49 by kpoquita               #+#    #+#             */
-/*   Updated: 2021/10/21 10:18:21 by kpoquita         ###   ########.fr       */
+/*   Updated: 2021/10/23 14:26:24 by kpoquita         ###   ########.fr       */
 /*                                                                                 */
 /* ******************************************************************************* */
 
@@ -64,5 +64,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+char	**ft_split(char const *s, char c);
 
 #endif
