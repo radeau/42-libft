@@ -6,7 +6,7 @@
 #    By: kpoquita <kpoquita@42abudhabi.ae>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/15 23:53:30 by kpoquita          #+#    #+#              #
-#    Updated: 2021/10/23 14:27:38 by kpoquita         ###   ########.fr        #
+#    Updated: 2021/10/25 10:03:01 by kpoquita         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ SRCS =  ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprin
 		ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strdup.c \
 		ft_substr.c ft_putchar_fd.c ft_putstr_fd.c ft_memmove.c ft_calloc.c \
 		ft_atoi.c ft_memchr.c ft_putendl_fd.c ft_memcmp.c ft_putnbr_fd.c ft_strjoin.c \
-		ft_split.c \
+		ft_split.c ft_strtrim.c \
 
 BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
 		ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c 
