@@ -6,7 +6,7 @@
 /*   By: kpoquita <kpoquita@42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 17:48:46 by kpoquita          #+#    #+#             */
-/*   Updated: 2021/10/11 17:49:48 by kpoquita         ###   ########.fr       */
+/*   Updated: 2021/10/25 21:26:04 by kpoquita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,17 @@
 char	*ft_strchr(const char *s, int c)
 {
 	char	*str;
+	int	i;
 
 	str = (char *) s;
-	while (*str != c)
+	if (c == '\0')
+		return (str + ft_strlen(str));
+	i = 0;
+	while (str[i] != '\0')
 	{
-		if (!*str)
-			return (NULL);
-		str++;
+		if (str[i] == (char) c)
+			return (str + i);
+		i++;
 	}
-	return (str);
+	return (NULL);
 }

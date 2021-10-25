@@ -6,7 +6,7 @@
 /*   By: kpoquita <kpoquita@42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 10:41:56 by kpoquita          #+#    #+#             */
-/*   Updated: 2021/10/24 14:35:09 by kpoquita         ###   ########.fr       */
+/*   Updated: 2021/10/25 19:52:23 by kpoquita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,9 +52,9 @@ char	**ft_split(char const *s, char c)
 	
 	wordcount = ft_word_count(s, c);
 	split = (char **) malloc(sizeof(char *) * (wordcount + 1));
-	i = -1;
 	if (!split)
 		return (NULL);
+	i = -1;
 	while (++i < wordcount)
 	{
 		while (s[0] == c)

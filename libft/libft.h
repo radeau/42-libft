@@ -6,7 +6,7 @@
 /*   By: kpoquita <kpoquita@student.42abudhabi.ae>       +#+  +:+       +#+        */
 /*                                                     +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/07 21:05:49 by kpoquita               #+#    #+#             */
-/*   Updated: 2021/10/25 10:02:38 by kpoquita         ###   ########.fr       */
+/*   Updated: 2021/10/25 20:57:20 by kpoquita         ###   ########.fr       */
 /*                                                                                 */
 /* ******************************************************************************* */
 
@@ -66,5 +66,9 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 char	**ft_split(char const *s, char c);
 char    *ft_strtrim(char const *s1, char const *set);
+void    ft_striteri(char *s, void (*f)(unsigned int, char *));
+void    ft_lstdelone(t_list *lst, void (*del)(void *));
+t_list  *ft_lstlast(t_list *lst);
+char    *ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 #endif
