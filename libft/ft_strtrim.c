@@ -6,32 +6,32 @@
 /*   By: kpoquita <kpoquita@42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 10:41:35 by kpoquita          #+#    #+#             */
-/*   Updated: 2021/10/25 19:49:50 by kpoquita         ###   ########.fr       */
+/*   Updated: 2021/10/28 17:11:34 by kpoquita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int    ft_isset(int s1, char const *set)
+static int	ft_isset(int s1, char const *set)
 {
-    int i;
-    
-    i = 0;
-    while (set[i] != '\0')
-    {
-        if (set[i] == s1)
-            return (1);
-        i++;
-    }
-    return (0);
+	int	i;
+
+	i = 0;
+	while (set[i] != '\0')
+	{
+		if (set[i] == s1)
+			return (1);
+		i++;
+	}
+	return (0);
 }
 
-char    *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*trim;
-	int	f;
-	int	l;
-	int	i;
+	int		f;
+	int		l;
+	int		i;
 
 	f = 0;
 	if (!s1 || !set)

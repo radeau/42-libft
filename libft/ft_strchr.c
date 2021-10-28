@@ -6,7 +6,7 @@
 /*   By: kpoquita <kpoquita@42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 17:48:46 by kpoquita          #+#    #+#             */
-/*   Updated: 2021/10/25 21:26:04 by kpoquita         ###   ########.fr       */
+/*   Updated: 2021/10/28 17:32:19 by kpoquita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strchr(const char *s, int c)
 {
 	char	*str;
-	int	i;
+	int		i;
 
 	str = (char *) s;
 	if (c == '\0')

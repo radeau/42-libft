@@ -6,7 +6,7 @@
 /*   By: kpoquita <kpoquita@42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 10:23:18 by kpoquita          #+#    #+#             */
-/*   Updated: 2021/10/25 21:49:18 by kpoquita         ###   ########.fr       */
+/*   Updated: 2021/10/28 17:33:47 by kpoquita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str = (char *)malloc(sizeof(*s) * (len + 1));
 	if (!str)
 		return (NULL);
-	ft_strlcpy(str,s + start, len + 1);
+	ft_strlcpy(str, s + start, len + 1);
 	return (str);
 }

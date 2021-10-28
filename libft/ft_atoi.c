@@ -6,7 +6,7 @@
 /*   By: kpoquita <kpoquita@42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/17 18:52:17 by kpoquita          #+#    #+#             */
-/*   Updated: 2021/10/25 21:09:24 by kpoquita         ###   ########.fr       */
+/*   Updated: 2021/10/28 17:05:49 by kpoquita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_atoi(const char *str)
 {
-	size_t		i;
+	size_t	i;
 	int		num;
 	int		sign;
 

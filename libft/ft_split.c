@@ -6,7 +6,7 @@
 /*   By: kpoquita <kpoquita@42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 10:41:56 by kpoquita          #+#    #+#             */
-/*   Updated: 2021/10/25 19:52:23 by kpoquita         ###   ########.fr       */
+/*   Updated: 2021/10/28 17:30:09 by kpoquita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 static char	ft_word_count(char const *s, char c)
 {
-	int	i;
-	int	words;
-	
+	int		i;
+	int		words;
+
 	i = 0;
 	words = 0;
 	while (s[i])
@@ -31,8 +31,8 @@ static char	ft_word_count(char const *s, char c)
 static char	*ft_stringcpy(char const *s, char c)
 {
 	char	*str;
-	int	i;
-	
+	int		i;
+
 	i = 0;
 	while (s[i] != '\0' && s[i] != c)
 		i++;
@@ -48,8 +48,8 @@ char	**ft_split(char const *s, char c)
 {
 	char	wordcount;
 	char	**split;
-	int	i;
-	
+	int		i;
+
 	wordcount = ft_word_count(s, c);
 	split = (char **) malloc(sizeof(char *) * (wordcount + 1));
 	if (!split)
@@ -59,7 +59,8 @@ char	**ft_split(char const *s, char c)
 	{
 		while (s[0] == c)
 			s++;
-		if (!(split[i] = ft_stringcpy(s, c)))
+		split[i] = ft_stringcpy(s, c);
+		if (!(split[i]))
 		{
 			while (i > 0)
 				free(split[i--]);

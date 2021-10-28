@@ -6,7 +6,7 @@
 #    By: kpoquita <kpoquita@42abudhabi.ae>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/15 23:53:30 by kpoquita          #+#    #+#              #
-#    Updated: 2021/10/26 09:43:43 by kpoquita         ###   ########.fr        #
+#    Updated: 2021/10/28 18:08:02 by kpoquita         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,11 +32,11 @@ CFLAGS = -Wall -Wextra -Werror -I.
 
 NAME = libft.a
 
-all:	$(NAME) 
-
 $(NAME):	$(OBJS)
 			ar rcs $(NAME) $(OBJS)
 			ranlib $(NAME)
+
+all:	$(NAME)
 
 bonus:	$(OBJS_BONUS)
 		ar rcs $(NAME) $(OBJS_BONUS)
