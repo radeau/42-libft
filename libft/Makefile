@@ -6,7 +6,7 @@
 #    By: kpoquita <kpoquita@42abudhabi.ae>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/15 23:53:30 by kpoquita          #+#    #+#              #
-#    Updated: 2021/10/28 18:08:02 by kpoquita         ###   ########.fr        #
+#    Updated: 2021/10/29 10:21:13 by kpoquita         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,9 +49,5 @@ fclean:		clean
 			$(RM) $(NAME)
 
 re:		fclean all
-
-so:	
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS) $(BONUS)
-	gcc -nostartfiles -shared -o libft.so $(OBJS) $(OBJS_BONUS)
 
 .PHONY:		all clean fclean re bonus rebonus
