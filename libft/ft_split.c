@@ -6,7 +6,7 @@
 /*   By: kpoquita <kpoquita@42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 10:41:56 by kpoquita          #+#    #+#             */
-/*   Updated: 2021/10/28 17:30:09 by kpoquita         ###   ########.fr       */
+/*   Updated: 2021/10/29 08:54:02 by kpoquita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,12 +44,25 @@ static char	*ft_stringcpy(char const *s, char c)
 	return (str);
 }
 
+static char	**ft_freemem(char **s)
+{
+	int	i;
+
+	i = 0;
+	while (i > 0)
+		free(s[i--]);
+	free(s);
+	return (NULL);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	wordcount;
 	char	**split;
 	int		i;
 
+	if (!s)
+		return (NULL);
 	wordcount = ft_word_count(s, c);
 	split = (char **) malloc(sizeof(char *) * (wordcount + 1));
 	if (!split)
@@ -62,10 +75,7 @@ char	**ft_split(char const *s, char c)
 		split[i] = ft_stringcpy(s, c);
 		if (!(split[i]))
 		{
-			while (i > 0)
-				free(split[i--]);
-			free(split);
-			return (NULL);
+			return (ft_freemem(split));
 		}
 		s += ft_strlen(split[i]);
 	}
