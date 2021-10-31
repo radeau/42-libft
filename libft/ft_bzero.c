@@ -6,7 +6,7 @@
 /*   By: kpoquita <kpoquita@42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/08 02:31:44 by kpoquita          #+#    #+#             */
-/*   Updated: 2021/10/08 02:44:31 by kpoquita         ###   ########.fr       */
+/*   Updated: 2021/10/31 11:26:08 by kpoquita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*str;
-
-	str = s;
-	while (n-- > 0)
-		*str++ = '\0';
+	ft_memset(s, 0, n);
 }
