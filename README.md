@@ -1,7 +1,6 @@
 # Libft - @42AbuDhabi
-<img src="https://github.com/radeau/42-libft/blob/main/img/IMG_7557.jpeg" width="200" height="150">
 
-------------
+[![42Project Score](https://badge42.herokuapp.com/api/project/kpoquita/Libft)](https://github.com/JaeSeoKim/badge42)
 
 This project aims to code a C library regrouping usual functions that will be allowed to use in all other 42 projects. The tasks includes re-writing C standard functions, understand them, and learn to use them.
 
