@@ -1,48 +1,68 @@
-# Libft - @42AbuDhabi
 
-[![42Project Score](https://badge42.herokuapp.com/api/project/kpoquita/Libft)](https://github.com/JaeSeoKim/badge42)
+# 42 Libft Project
 
-This project aims to code a C library regrouping usual functions that will be allowed to use in all other 42 projects. The tasks includes re-writing C standard functions, understand them, and learn to use them.
+The 42 libft project is a C library that regroups common functions that can be used in all other 42 projects. The project involves rewriting some of the standard C library functions, understanding them, and learning to use them.
 
-## Standard C library Functions
-Libc functions | 
-:----------- |
-[ft_memset](libft/ft_memset.c) |
-[ft_bzero](libft/ft_bzero.c)
-[ft_memcpy](libft/ft_memcpy.c)
-[ft_memmove](libft/ft_memmove.c)
-[ft_memchr](libft/ft_memchr.c)
-[ft_memcmp](libft/ft_memcmp.c)
-[ft_strlen](libft/ft_strlen.c)
-[ft_strdup](libft/ft_strdup.c)
-[ft_strcpy](libft/ft_strcpy.c)
-[ft_strlcpy](libft/ft_strlcpy.c)
-[ft_strcat](libft/ft_strcat.c)
-[ft_strlcat](libft/ft_strlcat.c)
-[ft_strchr](libft/ft_strchr.c)
-[ft_strrchr](libft/ft_strrchr.c)
-[ft_strstr](libft/ft_strstr.c)
-[ft_strnstr](libft/ft_strnstr.c)
-[ft_strcmp](libft/ft_strcmp.c)
-[ft_strncmp](libft/ft_strncmp.c)
-[ft_atoi](libft/ft_atoi.c)
-[ft_isalpha](libft/ft_isalpha.c)
-[ft_isdigit](libft/ft_isdigit.c)
-[ft_isalnum](libft/ft_isalnum.c)
-[ft_isascii](libft/ft_isascii.c)
-[ft_isprint](libft/ft_isprint.c)
-[ft_toupper](libft/ft_toupper.c)
-[ft_tolower](libft/ft_tolower.c)
-[ft_calloc](libft/ft_calloc.c)
+## Usage
 
-<!-- 
-## Additional Functions
-|Functions|Prototype| Description | Param. #1 | Param. #2 | Param. #3 | Return Value
-:-----------:|:-----------:|:-----------: | :-----------: | :-----------: | :-----------: | :-----------:
-|[ft_substr](libft/ft_substr.c)|char   *ft_substr(char const *s, unsigned int start, size_t len)|Allocates (with malloc) and returns a substring from the string given in argument. The substring begins at index 'start' and is of maximum size 'len'| The string from which create the substring | The start index of the substring in the string| The maximum length of the substring | The substring. NULL if the allocation fails
+To use the libft library, follow the below steps:
 
-## Bonus Functions
-|Functions|Prototype| Description | Param. #1 | Param. #2 | Param. #3 | Return Value
-:-----------:|:-----------:|:-----------: | :-----------: | :-----------: | :-----------: | :-----------:
+1. Clone this repository into your local machine:
+```
+git clone https://github.com/<username>/libft.git
+```
 
--->
+2. Compile the library using the `Makefile`:
+```
+make all
+```
+
+3. Include the header file `libft.h` in your source code:
+```
+#include "libft.h"
+```
+
+4. Compile your program with the library:
+```
+gcc -Wall -Wextra -Werror -I./libft/includes -L./libft -lft <your_program>.c -o <output>
+```
+
+Alternatively, you can compile the library along with your source code by adding the library's source files to your project's compilation process.
+
+## Functions
+
+The table below shows the list of standard C library functions that have been rewritten and included in this project.
+
+| Function      | Description                                                                                                     |
+| ------------- | --------------------------------------------------------------------------------------------------------------- |
+| ft_memset     | Fill a block of memory with a specified value                                                                    |
+| ft_bzero      | Fill a block of memory with zeros                                                                               |
+| ft_memcpy     | Copy a block of memory from source to destination                                                               |
+| ft_memmove    | Copy a block of memory from source to destination, even if the blocks overlap                                    |
+| ft_memchr     | Search a block of memory for a specified byte                                                                   |
+| ft_memcmp     | Compare two blocks of memory                                                                                   |
+| ft_strlen     | Get the length of a string                                                                                      |
+| ft_strdup     | Duplicate a string                                                                                              |
+| ft_strcpy     | Copy a string from source to destination                                                                        |
+| ft_strlcpy    | Copy a string from source to destination with a specified maximum length                                        |
+| ft_strcat     | Concatenate two strings                                                                                         |
+| ft_strlcat    | Concatenate two strings with a specified maximum length                                                         |
+| ft_strchr     | Find the first occurrence of a character in a string                                                            |
+| ft_strrchr    | Find the last occurrence of a character in a string                                                             |
+| ft_strstr     | Find the first occurrence of a substring in a string                                                            |
+| ft_strnstr    | Find the first occurrence of a substring in a string with a specified maximum length                            |
+| ft_strcmp     | Compare two strings                                                                                             |
+| ft_strncmp    | Compare two strings with a specified maximum length                                                             |
+| ft_atoi       | Convert a string to an integer                                                                                   |
+| ft_isalpha    | Check if a character is an alphabetic character                                                                  |
+| ft_isdigit    | Check if a character is a digit                                                                                  |
+| ft_isalnum    | Check if a character is an alphabetic or a digit character                                                       |
+| ft_isascii    | Check if a character is a 7-bit US-ASCII character                                                               |
+| ft_isprint    | Check if a character is a printable character                                                                    |
+| ft_toupper    | Convert a character to uppercase                                                                                 |
+| ft_tolower    | Convert a character to lowercase                                                                                 |
+| ft_calloc     | Allocate and zero-initialize a block of memory                                                                   |
+
+## Conclusion
+
+The 42 libft project is an essential building block for other 42 projects. It contains some of the most commonly used C library functions that have been rewritten and optimized for efficiency.
